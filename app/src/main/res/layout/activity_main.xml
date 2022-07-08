@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final_bg"
+    android:layout_centerInParent="true"
+    android:backgroundTintMode="src_atop"
+    android:backgroundTint="@color/temporaryBlack"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/kfc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/font"
+        android:text="Kilimanjaro Food Court"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="110px"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_below="@id/kfc"
+        android:src="@drawable/ic_baseline_fastfood_24"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="40dp"
+        android:text="LOGIN"
+        android:fontFamily="@font/font"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:id="@+id/username"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:id="@+id/user"
+            android:hint="Username"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:id="@+id/password"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/pass"
+            android:fontFamily="@font/font"
+            android:hint="Password"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="120dp"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:id="@+id/loginBtn"
+        android:fontFamily="@font/font"
+        app:strokeColor="@color/teal_700"
+        android:backgroundTint="@color/purple_200"
+        app:cornerRadius="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:onClick="goToMenu"
+        android:text="Login"
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

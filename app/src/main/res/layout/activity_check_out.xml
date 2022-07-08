@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOut">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ordersList"
+        >
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:layout_below="@id/ordersList"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        android:id="@+id/total"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mpesa Id"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="@font/font"
+        android:id="@+id/mpesaId"
+        android:layout_below="@id/total"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/purple_700"
+        android:id="@+id/pay"
+        android:fontFamily="@font/font"
+        android:text="Pay"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/mpesaId"
+        android:onClick="payOrder"
+        />
+
+</RelativeLayout>

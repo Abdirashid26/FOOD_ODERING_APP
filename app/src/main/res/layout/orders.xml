@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name"
+        android:layout_weight="8"
+        android:id="@+id/orderName"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:fontFamily="@font/font"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Price"
+        android:id="@+id/orderPrice"
+        android:textSize="20dp"
+        android:fontFamily="@font/font"
+        android:padding="15dp"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remove"
+        android:layout_weight="2"
+        android:textSize="10dp"
+        android:onClick="removeOrder"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:layout_marginHorizontal="10dp"
+        tools:ignore="UsingOnClickInXml" />
+
+</LinearLayout>
